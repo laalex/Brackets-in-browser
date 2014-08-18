@@ -1,0 +1,10 @@
+{
+  "name": "brackets-node-filesystem-api",
+  "version": "0.1.0",
+  "description": "FileSystem implementation API for brackets to run in a browser",
+  "author": "Lamba Alexandru <roshkattu94@gmail.com",
+  "dependencies": {
+    "socket.io": ">=1.0",
+    "express": "~4.8.3"
+  }
+}

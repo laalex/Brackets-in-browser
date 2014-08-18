@@ -1,0 +1,17 @@
+{
+    "debug.showErrorsInStatusBar": false,
+    "themes-brackets-extension.themes": [
+        "default"
+    ],
+    "styleActiveLine": true,
+    "insya-module-highlighter.enabled": false,
+    "linting.collapsed": true,
+    "brackets-darker.theme": "default",
+    "themes-brackets-extension.fontSize": "12px",
+    "closeBrackets": false,
+    "useTabChar": true,
+    "tabSize": 4,
+    "brackets-wsSanitizer.enabled": true,
+    "brackets-minifier.on-save": false,
+    "themes.theme": "light-theme"
+}
