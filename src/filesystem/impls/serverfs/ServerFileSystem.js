@@ -169,7 +169,7 @@ define(function (require, exports, module) {
             Log(err, 2);
             if(err){
                 //Return error
-                callback(err);
+                callback(err, null);
             }
             callback(null, stats);
         });
