@@ -116,7 +116,7 @@ define(function (require, exports, module) {
              * Add the requried functions for brackets.app. to run in browser
              */
             getApplicationSupportDirectory: function(){
-                return '/var/www/brackets/src';
+                return '/var/brackets-ide/src';
             }
         };
 

@@ -2,6 +2,6 @@
     "problems-panel": {
         "visible": "true"
     },
-    "projectPath": "/var/www/html/",
+    "projectPath": "/var/www/",
     "afterFirstLaunch": "true"
 }

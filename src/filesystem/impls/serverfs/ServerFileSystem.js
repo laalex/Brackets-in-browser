@@ -46,7 +46,7 @@ define(function (require, exports, module) {
     /**
      * Logging function
      */
-    var _ENABLE_LOGGING = true; //DEFINE LOGGING
+    var _ENABLE_LOGGING = false; //DEFINE LOGGING
     /**
      * 1 - message
      * 2 - errors
@@ -201,7 +201,7 @@ define(function (require, exports, module) {
      * Write the given data to the file at the given path, calling back asynchronously with either an error or, optionally, the          * FileSystemStats object associated with the written file. The optional options parameter can be used to specify an encoding (default "utf8") and an octal mode (default unspecified and implementation dependent). If no file exists at the given path, a new file will be created.
      */
     function writeFile(path, data, options, callback){
-        if(path === '/var/www/brackets/src/state.json'){
+        if(path === '/var/brackets-ide/src/state.json'){
             Log("Cancelled overriding the state.json file");
             callback(null, null, null);
             return;
