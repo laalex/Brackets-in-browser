@@ -104,8 +104,7 @@ define(function (require, exports, module) {
     function exists(path, callback){
         //Emit exists command to the nodejs server and wait for callback
         Log("Exists called: ["+path+"]");
-        Socket.emit('execCommand', 'exists', {path: path}, function(err, exist){
-            Log(err, 2);
+        Socket.emit('execCommand', 'exists', {path: path}, function(err, exists){
             callback(err, exists);
         });
     }
