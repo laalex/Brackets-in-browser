@@ -133,14 +133,18 @@ var fs = require('fs'),
     function stat(path, callback){
         //Get file stats
         fs.stat(path, function(err, _stats){
-            var _this_file_stats = {
-                isFile: _stats.isFile(),
-                mtime: _stats.mtime,
-                size: _stats.size,
-                realPath: path,
-                hash: _stats.mtime.getTime()
+            if(err){
+                callback(err);
+            } else {
+                var _this_file_stats = {
+                    isFile: _stats.isFile(),
+                    mtime: _stats.mtime,
+                    size: _stats.size,
+                    realPath: path,
+                    hash: _stats.mtime.getTime()
+                }
+                callback(err, _this_file_stats);
             }
-            callback(err, _this_file_stats)
         });
     }
 
