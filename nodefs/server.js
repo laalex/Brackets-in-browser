@@ -122,7 +122,7 @@ var fs = require('fs'),
     function exists(path, callback){
         //Check if the file exists
         fs.exists(path, function(exists){
-            callback(null,exists); 
+            callback(null, exists);
         });
     };
 
@@ -140,7 +140,6 @@ var fs = require('fs'),
                 realPath: path,
                 hash: _stats.mtime.getTime()
             }
-            console.log(_this_file_stats);
             callback(err, _this_file_stats)
         });
     }
@@ -178,7 +177,6 @@ var fs = require('fs'),
                         realPath: file,
                         hash: _stats.mtime.getTime()
                     }
-                    console.log(_this_file_stats);
                     _file_stats[pos] = _this_file_stats;
                 });
                 
@@ -215,7 +213,6 @@ var fs = require('fs'),
                             realPath: path,
                             hash: _stats.mtime.getTime()
                         }
-                        console.log(_this_file_stats);
                         callback(err, _this_file_stats);
                     } else {
                         //Return error
@@ -246,7 +243,6 @@ var fs = require('fs'),
                             realPath: path,
                             hash: _stats.mtime.getTime()
                         }
-                        console.log(_this_file_stats);
                         callback(err, data, _this_file_stats);
                     } else {
                         //Return error
@@ -295,8 +291,7 @@ var fs = require('fs'),
                             realPath: path,
                             hash: _stats.mtime.getTime()
                         }
-                        console.log(_this_file_stats);
-                        callback(serr, stats, _this_file_stats);
+                        callback(serr, _this_file_stats, true);
                     } else {
                         //Return error
                         callback(serr, null, true);
