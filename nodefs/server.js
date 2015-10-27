@@ -25,7 +25,7 @@ var fs = require('fs'),
 
     var _connections = []; //Keep track of nodejs connections
     var _socket = null; //Keep a copy of the current socket
-    var _basePath = "/var/www/";
+    var _basePath = "/var/www";
 
 
 
